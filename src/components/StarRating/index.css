@@ -1,0 +1,9 @@
+.star-rating-wrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: center; 
+   align-items: center;
+}
+.star-rating-wrapper .text {
+  color: #fff;
+}
