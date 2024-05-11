@@ -4,7 +4,6 @@ import StarRating from "./components/StarRating";
 import Dialog from "./components/Dialog";
 import reactLogo from "./assets/images/logo.png";
 
-
 function App() {
   const [isShowDialog, setIsShowDialog] = React.useState(false);
   return (
@@ -19,12 +18,23 @@ function App() {
         >
           <div className="dialog-children">
             <img src={reactLogo} alt="" />
+            <button
+              onClick={() => {
+                setIsShowDialog(false);
+              }}
+            >
+              Close Dialog
+            </button>
           </div>
         </Dialog>
         <div className="button-wrapper">
-          <button onClick={() => {
-            setIsShowDialog(true);
-          }}>open diaglo</button>
+          <button
+            onClick={() => {
+              setIsShowDialog(true);
+            }}
+          >
+            open diaglo
+          </button>
         </div>
       </div>
     </div>
