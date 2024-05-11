@@ -1,6 +1,6 @@
 // import React from "react";
 import { FaStar } from "react-icons/fa";
-import Constants from "@/constants";
+import Constants from "../../constants";
 
 const Star = ({ isActive, size, onClick }) => {
   return (
