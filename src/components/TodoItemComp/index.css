@@ -6,6 +6,7 @@
     background: #fff;
     border-radius: 5px;
     height: 80px;
+    margin-bottom: 20px;
 }
 
 .todo-item-comp-container .todo-item-comp-line {
