@@ -2,10 +2,14 @@ import React from "react";
 import "./index.css";
 import TodoItemComp from "../TodoItemComp";
 
-const TodosComp = () => {
+const TodosComp = ({todos, dispatch}) => {
   return (
     <div className="todos-comp-container">
-      <TodoItemComp done={true}/>
+      {
+        todos.map((todo) => (
+          <TodoItemComp key={todo.id} todo={todo} dispatch={dispatch}/>
+        ))
+      }
     </div>
   );
 };

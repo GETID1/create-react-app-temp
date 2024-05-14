@@ -11,7 +11,7 @@
 .todo-item-comp-container .todo-item-comp-line {
     width: 3px;
     height: 100%;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 .todo-item-comp-container .todo-item-comp-main {
     width: 100%;
@@ -24,7 +24,12 @@
 
 .todo-item-comp-container .todo-item-comp-main-title {
     font-size: 18px;
-}
+}  
+.todo-item-comp-container .todo-item-comp-main-title-input {
+    font-size: 18px;
+    border: 1px solid #666;
+    border-radius: 5px;
+}  
 
 .todo-item-comp-container .todo-item-comp-main-footer {
     display: flex;
