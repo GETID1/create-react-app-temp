@@ -4,7 +4,7 @@ import { MdDone, MdOutlineModeEdit, MdOutlineDelete } from "react-icons/md";
 import {
   createDeleteTodoAction,
   createDoneTodoAction,
-  createEditTodoAction
+  createEditTodoAction,
 } from "../../store/actionCreators";
 
 const TodoItemComp = ({ todo, dispatch, style }) => {
@@ -13,7 +13,7 @@ const TodoItemComp = ({ todo, dispatch, style }) => {
   const dispatchEditTodoAction = (id, title) => {
     if (tempTitle === todo.title) return;
     dispatch(createEditTodoAction(todo.id, tempTitle));
-  }
+  };
   return (
     <div className="todo-item-comp-container" style={style}>
       <div
@@ -35,12 +35,12 @@ const TodoItemComp = ({ todo, dispatch, style }) => {
             }}
             onBlur={() => {
               setIsEdit(false);
-              dispatchEditTodoAction(todo.id, tempTitle); 
+              dispatchEditTodoAction(todo.id, tempTitle);
             }}
             onKeyDown={(e) => {
               if (e.key === "Enter") {
                 setIsEdit(false);
-                dispatchEditTodoAction(todo.id, tempTitle); 
+                dispatchEditTodoAction(todo.id, tempTitle);
               }
             }}
           />
@@ -60,7 +60,6 @@ const TodoItemComp = ({ todo, dispatch, style }) => {
           <div className="t-i-c-m-f-utils">
             <MdDone
               onClick={() => {
-                console.log("Done clicked");
                 dispatch(createDoneTodoAction(todo.id));
               }}
             />
@@ -72,7 +71,6 @@ const TodoItemComp = ({ todo, dispatch, style }) => {
             />
             <MdOutlineDelete
               onClick={() => {
-                console.log("Delete clicked");
                 dispatch(createDeleteTodoAction(todo.id));
               }}
             />

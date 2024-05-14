@@ -3,7 +3,6 @@ import "./index.css";
 import TodoItemComp from "../TodoItemComp";
 
 const TodosComp = ({ todos, dispatch }) => {
-  console.log("TodosComp render", todos);
   return (
     <div className="todos-comp-container">
       {todos.length === 0 ? (

@@ -37,4 +37,4 @@ export const createEditTodoAction = (id, title) => {
       title,
     },
   };
-}
+};

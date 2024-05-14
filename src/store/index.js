@@ -26,19 +26,19 @@ export const reducer = (state, action) => {
           return todo;
         }),
       ];
-      case EDIT_TODO:
-        return [
-          ...state.map((todo) => {
-            if (todo.id === action.payload.id) {
-              return {
-                ...todo,
-                title: action.payload.title,
-                updateTime: formattedDate(new Date()),
-              };
-            }
-            return todo;
-          }),
-        ];
+    case EDIT_TODO:
+      return [
+        ...state.map((todo) => {
+          if (todo.id === action.payload.id) {
+            return {
+              ...todo,
+              title: action.payload.title,
+              updateTime: formattedDate(new Date()),
+            };
+          }
+          return todo;
+        }),
+      ];
     default:
       return state;
   }
