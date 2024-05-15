@@ -11,8 +11,8 @@ const TodoItemComp = ({ todo, dispatch }) => {
   const [isEdit, setIsEdit] = React.useState(false);
   const [tempTitle, setTempTitle] = React.useState(todo.title);
   const dispatchEditTodoAction = (id, title) => {
-    if (tempTitle === todo.title) return;
-    dispatch(createEditTodoAction(todo.id, tempTitle));
+    if (title === todo.title) return;
+    dispatch(createEditTodoAction(id, title));
   };
   return (
     <div className="todo-item-comp-container">
