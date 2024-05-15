@@ -14,9 +14,6 @@ const TodosComp = ({ todos, dispatch }) => {
               key={todo.id}
               todo={todo}
               dispatch={dispatch}
-              style={{
-                marginRight: idx % 4 === 3 ? 0 : "10px",
-              }}
             />
           ))}
         </>

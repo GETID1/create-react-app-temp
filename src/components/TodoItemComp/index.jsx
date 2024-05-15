@@ -7,7 +7,7 @@ import {
   createEditTodoAction,
 } from "../../store/actionCreators";
 
-const TodoItemComp = ({ todo, dispatch, style }) => {
+const TodoItemComp = ({ todo, dispatch }) => {
   const [isEdit, setIsEdit] = React.useState(false);
   const [tempTitle, setTempTitle] = React.useState(todo.title);
   const dispatchEditTodoAction = (id, title) => {
@@ -15,7 +15,7 @@ const TodoItemComp = ({ todo, dispatch, style }) => {
     dispatch(createEditTodoAction(todo.id, tempTitle));
   };
   return (
-    <div className="todo-item-comp-container" style={style}>
+    <div className="todo-item-comp-container">
       <div
         className="todo-item-comp-line"
         style={{
