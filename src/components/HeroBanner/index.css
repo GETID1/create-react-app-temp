@@ -1,0 +1,12 @@
+.hero-banner {
+    margin-top: 20px;
+    background-color: rgb(244, 244, 244);
+
+}
+.hero-banner .banner-item {
+    width: 100%;
+    img {
+        height: 560px;
+        object-fit: cover;
+    }
+}

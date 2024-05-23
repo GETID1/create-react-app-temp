@@ -1,0 +1,30 @@
+.footer {
+  border-top: 1px solid #c3c0c0;
+}
+.footer-content {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-item {
+  margin-right: 50px;
+  li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.footer-ul-title {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.footer-bottom {
+  border-top: 1px solid #c3c0c0;
+}
+.footer-bottom-wrap {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
